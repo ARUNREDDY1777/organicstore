@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Web</title>
+    <link rel="stylesheet" href="home.css"> 
+    <style>
+        .list a{
+            text-decoration: none;
+            font-size: 20px;
+            color: aliceblue;
+
+        }
+    </style><!-- Linking to the CSS file -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to Organic@form</h1>
+            
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="left-sidebar">
+            <h2>Organic products</h2>
+            
+            <p>Fruits & vegitable section</p>
+            <div class="menu-content">
+                <h2>Fruits & vegetables</h2>
+                <p> We offers a wide range of organic items such as fresh fruits, vegetables  all sourced from certified organic farms.</p>
+                <a href="mainpage.html" class="shop-now">Explore Items</a>
+            </div>
+        </div>
+        <div class="main">
+            
+            <h2></h2>
+            <p>The future of the nation depends on the condition of the soil</p>
+            
+            <div id="menu" class="menu">
+                <h1>----------Organic products----------</h1>
+                <h1>Eat healthily and stay healthy</h1>
+                <div class="menu-container">
+                    <div class="menu-content">
+                        <h2>Fruits & vegetables</h2>
+                        <p> We offers a wide range of organic items such as fresh fruits, vegetables all sourced from certified organic farms.</p>
+                        <a href="mainpage.html" class="shop-now">Explore Items</a>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="right-sidebar">
+     
+            <p><h2>Organic products</h2></p>
+            <p>Diary products Section</p>
+            <div class="menu-content1">
+                <h2>Diary Products</h2>
+                        <p> We offers a wide range of organic items such as fresh diary products all sourced from certified organic farms.</p>
+                        <a href="diary.html" class="shop-now">Explore Items</a>
+            </div>
+        </div>
+    </div>
+    <div class="photo">
+
+    </div>
+
+   
+    <div class="footer">
+        <div class="photo">
+            <img src="https://png.pngtree.com/png-vector/20240309/ourlarge/pngtree-cartoon-young-farmer-in-straw-hat-and-holding-rake-png-image_11918619.png" alt="Your Photo"> <!-- Add your image here -->
+        </div>
+        <div class="about">
+            <b><h1>About us</h1></b>
+            <h2>
+                <i>Welcome to Organic Farms! I am Arun Reddy and I am extremely passionate about healthy living and sustainable food practices. 
+                I am committed to making a positive impact on the world through our business. I hope that you'll join us on this journey towards 
+                healthy living and sustainable food practices.
+                Thank you for choosing our organic food products, and I look forward to serving you soon.</i>
+            </h2>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script> <!-- Linking to the JavaScript file -->
+    <script>
+        const menuImages = document.querySelector('.menu-images');
+        let currentPosition = 0;
+
+        function slideImages() {
+            currentPosition -= 25;
+            if (currentPosition < -75) {
+                currentPosition = 0;
+            }
+            menuImages.style.transform = 'translateX(${currentPosition}%)';
+        }
+        setInterval(slideImages, 2000);
+    </script>
+</body>
+
+</html>

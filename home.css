@@ -1,0 +1,203 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    
+
+}
+.main p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+    font-size: 30px;
+    padding-top:10px;
+    color: #131313;
+}
+.container {
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+}
+.header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align:center;
+}
+.header .list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.header .list ul li {
+    margin: 0 15px;
+    cursor: pointer;
+}
+.main-content {
+    height:700px;
+  padding-top: 0px;
+    display: flex;
+    margin-top: 20px;
+}
+.button{
+    text-align: center;
+}
+
+.left-sidebar{
+    width: 300px;
+    height: 490px;
+    background-color: #e9efbe;
+    padding: 20px;
+}
+.right-sidebar {
+    width: 300px;
+    height: 490px;
+    background-color: #e9efbe;
+    padding: 20px;
+}
+.main {
+    background-image:url("https://media.istockphoto.com/id/1147285020/photo/sunset-over-huge-sunflower-field.jpg?s=612x612&w=0&k=20&c=2R3oL5tHwqxlk6iIlFGNegzY736NDxpG16gzLRnUkx8=");
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    width: 60%;
+height: 70%;
+    padding: 20px;
+}
+.menu-images img {
+    width: 100%;
+    display: none;
+}
+.menu-images img.active {
+    display: block;
+}
+
+.menu {
+    padding-top:100px;
+    text-align: center;
+    position: relative;
+    color: rgb(234, 233, 240);
+    overflow: hidden;
+    height: 100vh;
+}
+
+.menu h1 {
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    position: relative;
+    height: calc(100% - 100px);
+}
+
+.menu-images {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 400%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.menu-images img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(47, 105, 14, 0.397);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    width: 260px;
+    height:299px;
+    max-width: 610px;
+    margin-left:-600px;
+    margin-top:90px;
+}
+.menu-content1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(47, 105, 14, 0.397);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 10;
+    width: 260px;
+    height:299px;
+    max-width: 610px;
+    margin-left:600px;
+    margin-top:90px;
+}
+
+.menu-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.menu-content1 h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.shop-now {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #c39768;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.shop-now:hover {
+    background-color: #a3764f;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0;
+
+}
+
+
+.photo {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-start; 
+
+.photo img {
+    max-width: 100%; 
+    height: auto;
+}
+.about {
+    flex: 2; 
+    text-align: right; 
+    padding-left: 20px;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.about p {
+    font-size:100px
+     10px;
+}
+
+.about h6 {
+    font-style: italic;
+    color: #5116b7;
+}
+.list .button{
+    border-radius:5%;
+    background-color: #4CAF50;
+    color: #f0f0f0;
+}

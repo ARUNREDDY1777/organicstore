@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+.main{
+    background-image:url(https://tracextech.com/wp-content/uploads/2023/06/cover-crops.png);
+    background-position:bottom;
+    background-size:cover;
+    height: 106vh;
+}
+ .content{
+    text-decoration-color: rgb(190, 191, 192);
+    width: 1000px;
+    height: 75px;
+    margin:auto;
+    text-align: center;
+}
+.navbar{
+    width:1200px;
+    height:75px;
+    margin:auto;
+}
+.icon{
+    width:550px;
+    float:left;
+    height:70px;
+}
+.logo{
+    color:rgb(5, 2, 0);
+    font: size 35px;
+    font-family: Arial;
+    padding-left:10px;
+    float:left;
+    padding-top:10px;
+    margin-left:5px;
+    align-items: center;
+}
+.menu{
+    width:400px;
+    float:left;
+    height:70px;
+}
+
+.form{
+    width:350px;
+    height: 350px;
+    background-color:rgba(246, 244, 244, 0.521);
+    border-radius:10%;
+    padding:25px;
+    position: absolute;
+    top:150px;
+    left: 600px;
+    text-align: center;
+
+}
+.form input{
+    width: 240px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.504);
+    border-radius:10px;
+    border-bottom:1px solid rgb(0, 0, 10);
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top:30px;
+}
+.login{
+    width: 240px;
+    height: 35px;
+    background-color: aquamarine;
+    border: none;
+    border-radius:10px;
+    border-bottom: 1px solid black;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    font-size: 18px;
+    margin-top: 30px;
+    cursor: pointer;
+    padding-bottom: auto;
+    margin:auto;
+}
+.login:hover{
+   background-color:orange;
+}
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons{
+    color:white;
+    font-size: 30px;
+    padding-left:14px;
+    padding-top:5px;
+
+}

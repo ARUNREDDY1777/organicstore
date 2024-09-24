@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organic Fruits & Vegetables</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="list">
+        <div class="heading">
+            <div class="logo">
+                <img src="logop.png" alt="Logo" width="250">
+            </div>
+            <h1>ORGANIC FRUITS & VEGETABLES</h1>
+            <h3>&mdash; Item List &mdash;</h3>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="page1.html">HOME</a></li>
+                    <li><a href="page1.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            
+            <!-- Search input -->
+            <div class="search">
+                <input class="srch" id="searchInput" type="search" placeholder="Search product here" oninput="searchProduct()">
+                <button class="btt" onclick="searchProduct()">Search</button>
+            </div>
+        </div>
+        
+        <!-- Items list -->
+        <div class="items" id="items">
+            <div class="item" data-name="Mango">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtcPu69pwTTzP72g3uZ2p8Pnny31EsOeB3rw&s" alt="Mango">
+                <div class="details">
+                    <h5>Mango<br>₹270</h5>
+                </div>
+                <button onclick="addToCart('Mango', 200)">Add to cart</button>
+            </div>
+
+            <div class="item" data-name="Tomato">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQsNxvkiOWnmi3BlngCewX1hbpn9nb1S9g-A&s" alt="Tomato">
+                <div class="details">
+                    <h5>Tomato<br>₹100</h5>
+                </div>
+                <button onclick="addToCart('Tomato', 100)">Add to cart</button>
+            </div>
+
+            <div class="item" data-name="Pomegranate">
+                <img src="https://images.healthshots.com/healthshots/en/uploads/2021/09/27184641/pomegranate-1600x900.jpg" alt="Pomegranate">
+                <div class="details">
+                    <h5>Pomegranate<br>₹250</h5>
+                </div>
+                <button onclick="addToCart('Pomegranate', 200)">Add to cart</button>
+            </div>
+
+            <div class="item" data-name="Banana">
+                <img src="https://crop-protection.basf.ph/sites/basf.co.ph/files/2023-07/banana.jpg" alt="Banana">
+                <div class="details">
+                    <h5>Banana<br>₹70</h5>
+                </div>
+                <button onclick="addToCart('Banana', 100)">Add to cart</button>
+            </div>
+
+            <div class="item" data-name="Dragon Fruit">
+                <img src="https://kisanvedika.bighaat.com/wp-content/uploads/2024/07/view-delicious-dragon-fruit-pitahaya_23-2151566292.jpg" alt="Dragon Fruit">
+                <div class="details">
+                    <h5>Dragon Fruit<br>₹150</h5>
+                </div>
+                <button onclick="addToCart('Dragon Fruit', 200)">Add to cart</button>
+            </div>
+
+            <div class="item" data-name="Apple">
+                <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-plants-apple-tree-grafted-plant-16968596422796_420x.jpg?v=1634213430" alt="Apple">
+                <div class="details">
+                    <h5>Apple<br>₹200</h5>
+                </div>
+                <button onclick="addToCart('Apple', 200)">Add to cart</button>
+            </div>
+
+            <div class="item" data-name="pineapple">
+                <img src="https://cdn.nyallergy.com/wp-content/uploads/pineapplenew3.webp" alt="pineapple">
+                <div class="details">
+                    <h5>pineapple<br>₹200</h5>
+                </div>
+                <button onclick="addToCart('pineapple', 200)">Add to cart</button>
+            </div>
+            <div class="item" data-name="Oranges">
+                <img src="https://insanelygoodrecipes.com/wp-content/uploads/2023/01/Fresh_Organic_Tangerine_Oranges_with_Leaves.jpg" alt="Oranges">
+                <div class="details">
+                    <h5>Oranges<br>₹200</h5>
+                </div>
+                <button onclick="addToCart('Oranges', 200)">Add to cart</button>
+            </div>
+            <div class="item" data-name="brinjal">
+                <img src="https://www.jiomart.com/images/product/original/590004102/brinjal-purple-striped-250-g-product-images-o590004102-p590004102-0-202408070949.jpg?im=Resize=(1000,1000)" alt="brinjal">
+                <div class="details">
+                    <h5>Brinjal<br>₹80</h5>
+                </div>
+                <button onclick="addToCart('Brinjal', 80)">Add to cart</button>
+            </div>
+            <div class="item" data-name="Drumstick">
+                <img src="https://cdn-magazine.nutrabay.com/wp-content/uploads/2023/09/edible-moringa-oleifera-with-green-leaves-white-background-1-scaled.jpg" alt="Drumstick">
+                <div class="details">
+                    <h5>Drumstick<br>₹70</h5>
+                </div>
+                <button onclick="addToCart('Drumstick', 70)">Add to cart</button>
+            </div>
+            <div class="item" data-name="Bottle gourd">
+                <img src="https://knownyouseed.com/wp-content/uploads/2021/03/1524.jpg" alt="Bottle gourd">
+                <div class="details">
+                    <h5>Bottle gourd<br>₹60</h5>
+                </div>
+                <button onclick="addToCart('bottlegourd', 60)">Add to cart</button>
+            </div>
+            <div class="item" data-name="Broccoli">
+                <img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/5390/h1218g16207258089583.jpg" alt="Broccoli">
+                <div class="details">
+                    <h5>Broccoli<br>₹90</h5>
+                </div>
+                <button onclick="addToCart('Broccoli', 90)">Add to cart</button>
+            </div>
+            <div class="item" data-name="Cauliflower">
+                <img src="https://www.koppert.com/content/_processed_/f/3/csm_Cauliflower_b34e6786a9.jpg" alt="Cauliflower">
+                <div class="details">
+                    <h5>Cauliflower<br>₹70</h5>
+                </div>
+                <button onclick="addToCart('Cauliflower', 70)">Add to cart</button>
+            </div>
+            <div class="item" data-name="Carrot">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsrB2VF2M4HwR3UAkrTYwOZ2pBPRrNATt2rWNbF3IqEtZJg_MGKWQvd48jmp5QzqC-XP8&usqp=CAU" alt="Carrot">
+                <div class="details">
+                    <h5>Carrot<br>₹90</h5>
+                </div>
+                <button onclick="addToCart('Carrot', 90)">Add to cart</button>
+            </div>
+            <div class="item" data-name="Beetroot">
+                <img src="https://sakata.co.za/wp-content/uploads/2017/09/Red-Ace.jpg" alt="Beetroot">
+                <div class="details">
+                    <h5>Beetroot<br>₹100</h5>
+                </div>
+                <button onclick="addToCart('Beetroot', 100)">Add to cart</button>
+            </div>
+            <div class="item" data-name="Watermelon">
+                <img src="https://m.media-amazon.com/images/I/71NrRvrGF2L._AC_UF1000,1000_QL80_.jpg" alt="Watermelon">
+                <div class="details">
+                    <h5>Watermelon<br>₹80</h5>
+                </div>
+                <button onclick="addToCart('Watermelon', 80)">Add to cart</button>
+            </div>
+
+
+            <!-- Additional items go here -->
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="cart-icon">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYsXr2FjpcioisvUL4qKjzqFLBegzK9xWwQ&s" alt="Cart" width="50" onclick="scrollToCart()">
+            <span id="cart-count">0</span> <!-- Display the number of items in the cart -->
+        </div>
+
+        <!-- Cart Section -->
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items">
+                <p>No items in the cart</p>
+            </div>
+            <div class="cart-total">
+                <h3>Total: ₹<span id="total-amount">0</span></h3>
+            </div>
+            <button id="checkout" onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script>
+        // Initialize an empty cart array
+        let cart = [];
+
+        // Function to add items to cart
+        function addToCart(productName, productPrice) {
+            cart.push({ name: productName, price: productPrice });
+            updateCart();
+        }
+
+        // Function to update the cart UI
+        function updateCart() {
+            const cartItemsDiv = document.getElementById('cart-items');
+            const totalAmountSpan = document.getElementById('total-amount');
+            const cartCountSpan = document.getElementById('cart-count');
+
+            // Clear current cart display
+            cartItemsDiv.innerHTML = '';
+
+            // Check if the cart is empty
+            if (cart.length === 0) {
+                cartItemsDiv.innerHTML = '<p>No items in the cart</p>';
+                totalAmountSpan.textContent = '0';
+                cartCountSpan.textContent = '0';
+                return;
+            }
+
+            // Display each item in the cart
+            let totalAmount = 0;
+            cart.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.textContent = `${item.name} - ₹${item.price}`;
+                cartItemsDiv.appendChild(itemDiv);
+                totalAmount += item.price;
+            });
+            
+
+            // Update total amount and cart count
+            totalAmountSpan.textContent = totalAmount;
+            cartCountSpan.textContent = cart.length;
+        }
+
+        // Function to handle checkout
+        function checkout() {
+            if (cart.length === 0) {
+                alert('Your cart is empty!');
+                return;
+            }
+
+            // Display the cart items for checkout
+            let cartContent = 'You have the following items in your cart:\n';
+            cart.forEach(item => {
+                cartContent += `${item.name} - ₹${item.price}\n`;
+            });
+            cartContent += `\nTotal: ₹${document.getElementById('total-amount').textContent}`;
+            
+            alert(cartContent);  // Display cart details in an alert
+        }
+
+        // Simple search functionality for products
+        function searchProduct() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.querySelectorAll('.item');
+            
+            items.forEach(item => {
+                const itemName = item.getAttribute('data-name').toLowerCase();
+                if (itemName.includes(input)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<html>
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="list">
+        <div class="heading">
+            <div class="logo">
+                <img src="logop.png" alt="Logo" width="250">
+            </div>
+            <h1>ORGANIC DIARY PRODUCTS</h1>
+            <h3>&mdash;Item list&mdash;</h3>
+            
+            <div class="menu">
+                <ul>
+                    <li><a href="page1.html">HOME</a></li>
+                    <li><a href="page1.html">ABOUT</a></li>
+                    <li><a href="help.html">HELP</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" placeholder="Search product here">
+                <button class="btt">Search</button>
+            </div>
+            
+        </div>
+        
+        <div class="items">
+            <div class="item">
+                <img src="https://www.parents.com/thmb/qKThoOlGAzJwGZ-moTTGQVFRvhg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Grass-Fed-vs-Organic-Milk-9fff118133c14e578c2379ed86888817.jpg">
+                <div class="details">
+                    <h5>Milk<br>Rs.200</h5>
+                </div>
+                <button>Add to cart</button>
+            </div>
+
+            <div class="item">
+                <img src="https://vamshifarms.com/cdn/shop/files/gheefalling_2048x.jpg?v=1717574447">
+                <div class="details">
+                    <h5>Ghee<br>Rs.500</h5>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="item">
+                <img src="https://www.healthifyme.com/blog/wp-content/uploads/2023/07/Curd.jpg">
+                <div class="details">
+                    <h5>Curd<br>Rs.200</h5>
+                </div>
+                <button>Add to cart</button>
+            </div>
+
+            <div class="item">
+                <img src="https://www.daringgourmet.com/wp-content/uploads/2021/01/How-to-Make-Yogurt-7.jpg">
+                <div class="details">
+                    <h5>yogurt<br>Rs.300</h5>
+                </div>
+                <button>Add to cart</button>
+            </div>
+            <div class="item">
+                <img src="https://consumer-voice.org/wp-content/uploads/2023/04/Buttermilk-A-Refreshing-Summer-Drink.jpg">
+                <div class="details">
+                    <h5>Butter milk<br> Rs.100</h5>
+                </div>
+                <button>Add to cart</button>
+            </div>
+
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwggQAcCKOZ9a-DQ4-zfiLC_FYPTZjnSJKgA&s">
+                <div class="details">
+                    <h5>Cheese<br>Rs.450</h5>
+                </div>
+                <button>Add to cart</button>
+            </div><div class="item">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhArROI99M2U0-JkDMbSWzIEDEQu8PcZIMNnCwzoAkB9y8Cu6IW_BGZyvyejE_4DDH1ong7m8PKZzCibJGVbJUXKTfRibwsJkej2T8iWP4TYuwbw30QVVp2_f1Mo79wWb9_G-Q32eigbkM/s1600/IMG_3156.jpg">
+                <div class="details">
+                    <h5>Kova<br>Rs.250</h5>
+                </div>
+                <button>Add to cart</button>
+            </div>
+
+            <div class="item">
+                <img src="https://purensoselect.in/cdn/shop/products/100-goat-milk-powder-661.webp?v=1676277895">
+                <div class="details">
+                    <h5>Milk power<br>Rs.400</h5>
+                </div>
+                <button>Add to cart</button>
+            </div><div class="item">
+                <img src="https://img.bebeautiful.in/www-bebeautiful-in/how-to-use-milk-cream-for-your-skin-600x350-picmobhome.jpg">
+                <div class="details">
+                    <h5>Cream<br>Rs.300</h5>
+                </div>
+                <button>Add to cart</button>
+            </div>
+
+            
+        </div>
+        
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div class="cart-icon">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnYsXr2FjpcioisvUL4qKjzqFLBegzK9xWwQ&s" alt="Cart" width="50" onclick="scrollToCart()">
+                <span id="cart-count"></span> 
+            </div>
+            <div id="cart-items">
+                <p>No items in the cart</p>
+            </div>
+            <div class="cart-total">
+                <h3>Total: Rs.<span id="total-amount">0</span></h3>
+            </div>
+            <button id="checkout">Checkout</button>
+        </div>
+       <script src="mainpage.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.heading {
+    background-color: #b1d038;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 10px 0;
+    font-size: 2.5em;
+}
+
+h3 {
+    margin: 5px 0;
+    font-style: italic;
+    color: #555;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.srch {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.btt {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.btt:hover {
+    background-color: #218838;
+}
+
+.items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #e4c3c37d;
+    border-radius: 5px;
+    
+}
+
+.item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.items img {
+    width: 450px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.details h5 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.items button {
+    padding: 10px;
+    background-color: #59d12e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.items button:hover {
+    background-color: #511fa7;
+}
+
+.cart {
+    border-top: 2px solid #ccc;
+    padding: 20px;
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(241, 234, 234, 0.455);
+    width: 150px;
+}
+
+.cart h2, .cart h3 {
+    margin: -1px;
+}
+.cart-icon{
+    margin-top: 10px;
+
+}
